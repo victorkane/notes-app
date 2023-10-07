@@ -22,6 +22,8 @@ export default async function NotesPage() {
           return <Note key={note.id} note={note} />
         })}
       </div>
+
+      <CreateNote />
     </div>
   )
 }
