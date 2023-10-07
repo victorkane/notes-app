@@ -55,6 +55,28 @@ victor@victorpc:dev$ pwd
 /home/victor/Work/Learn/NextJS/NextJS-2023/Fireship/2023/2022-11-01-next-13-the-basics/dev
 ```
 
+- Using turborepo!
+- Upon running `npm run dev:`
+
+```bash
+victor@victorpc:notes-app$ npm run dev
+
+> notes-app@0.1.0 dev
+> next dev --turbo
+
+>>> TURBOPACK (beta)
+
+Thank you for trying Next.js v13 with Turbopack! As a reminder
+Turbopack is currently in beta and not yet ready for production.
+We appreciate your ongoing support as we work to make it ready
+for everyone.
+
+
+Learn more about Next.js v13 and Turbopack: https://nextjs.link/with-turbopack
+
+  ▲ Next.js 13.5.4
+```
+
 ### Install and run PocketBase
 
 - Go to [PocketBase Docs](https://pocketbase.io/docs/) and [download for Linux in my case](https://github.com/pocketbase/pocketbase/releases/download/v0.18.9/pocketbase_0.18.9_linux_amd64.zip) the executable and place it in the project document root
@@ -129,6 +151,23 @@ Date:   Sat Oct 7 14:38:22 2023 -0300
 
 - use a `loading.tsx` page
 - in a similar vein, use an `error.tsx` page to show errors occurring while navigating to a route.
+
+#### Fix for error wuen creating new note
+
+- Application of [PR Update page.tsx CreateNote](https://github.com/fireship-io/next13-pocketbase-demo/pull/12)
+
+```bash
+commit 3ef01f9fd8267e642d46f1bd36f65553690544b7 (HEAD -> main, origin/main)
+Author: victorkane <victorkane@gmail.com>
+Date:   Sat Oct 7 19:24:43 2023 -0300
+
+    fix(create note): solve event error upon creating a note
+
+ app/notes/CreateNote.tsx | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+```
+
+- However, upon creating a new note, we need the page to refresh after note is written to database, otherwise it doesn't show on page until it is refreshed
 
 ---
 
