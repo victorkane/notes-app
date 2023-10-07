@@ -104,7 +104,8 @@ victor@victorpc:notes-app$ ./pocketbase serve
 
 > Components are `Server Components` by default... they are rendered on the server... we can do data fetching directly inside of them with asynchronous functions
 
-- right in ❌the component itself (example is the `notes/page.tsx` component `NotesPage`!
+- right in the component itself (example is the `notes/page.tsx` component `NotesPage`!
+  ``
 
 #### ISR
 
@@ -121,6 +122,13 @@ Date:   Sat Oct 7 14:38:22 2023 -0300
  app/notes/[id]/page.tsx | 27 +++++++++++++++++++++++++++
  1 file changed, 27 insertions(+)
 ```
+
+- To pre-render pages use the `generateStaticParams()` function, which replaces pre-Next.js 13 `getStaticPaths`.
+
+#### Manage Loading State and UI between routes
+
+- use a `loading.tsx` page
+- in a similar vein, use an `error.tsx` page to show errors occurring while navigating to a route.
 
 ---
 
