@@ -100,6 +100,12 @@ victor@victorpc:notes-app$ ./pocketbase serve
 
 ### Additional notes
 
+#### Components are Server Components by default
+
+> Components are `Server Components` by default... they are rendered on the server... we can do data fetching directly inside of them with asynchronous functions
+
+- right in the component itself (example is the `notes/page.tsx` component `NotesPage`!
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
