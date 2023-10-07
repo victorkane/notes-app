@@ -94,6 +94,12 @@ victor@victorpc:notes-app$ ./pocketbase serve
 - Since the database is secure by default, we need to goto API permissions and make all the operations public for now
 - Click on Create to create the collection
 
+### Atomic commits
+
+- Step by step commits follow the development of the note-taking app
+
+### Additional notes
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
