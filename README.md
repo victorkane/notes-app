@@ -181,6 +181,8 @@ Date:   Sat Oct 7 19:24:43 2023 -0300
 router.refresh()
 ```
 
+> Actualy, it's in the video!!! At 08:16
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
