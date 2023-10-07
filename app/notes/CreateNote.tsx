@@ -17,7 +17,7 @@ export default function CreateNote() {
 
   const router = useRouter()
 
-  const create = async () => {
+  const create = async (e: React.FormEvent) => {
     // const db = new PocketBase('http://127.0.0.1:8090');
 
     // await db.records.create('notes', {
@@ -25,6 +25,7 @@ export default function CreateNote() {
     //   content,
     // });
 
+    e.preventDefault()
     await fetch("http://127.0.0.1:8090/api/collections/notes/records", {
       method: "POST",
       headers: {
