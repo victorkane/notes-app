@@ -9,7 +9,8 @@
 // }
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
+import { RedirectType, useRouter } from "next/navigation"
+import { redirect } from "next/navigation"
 
 export default function CreateNote() {
   const [title, setTitle] = useState("")
@@ -39,6 +40,15 @@ export default function CreateNote() {
 
     setContent("")
     setTitle("")
+
+    // this give uncaught in promise error
+    // redirect("/notes", RedirectType)
+
+    // works but is not client side, so no refresh
+    // router.push("/notes")
+
+    // works!!! proof of the truth of rtfm
+    router.refresh()
   }
 
   return (

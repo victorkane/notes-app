@@ -168,6 +168,18 @@ Date:   Sat Oct 7 19:24:43 2023 -0300
 ```
 
 - However, upon creating a new note, we need the page to refresh after note is written to database, otherwise it doesn't show on page until it is refreshed
+- fix in `CreateNote.tsx`!!
+
+```tsx
+// this give uncaught in promise error
+// redirect("/notes", RedirectType)
+
+// works but is not client side, so no refresh
+// router.push("/notes")
+
+// works!!! proof of the truth of rtfm
+router.refresh()
+```
 
 ---
 
