@@ -104,7 +104,23 @@ victor@victorpc:notes-app$ ./pocketbase serve
 
 > Components are `Server Components` by default... they are rendered on the server... we can do data fetching directly inside of them with asynchronous functions
 
-- right in the component itself (example is the `notes/page.tsx` component `NotesPage`!
+- right in ❌the component itself (example is the `notes/page.tsx` component `NotesPage`!
+
+#### ISR
+
+- On individual page routing with `next: { revalidate: 10 }`
+- See commit
+
+```bash
+commit 5a0a7ae2dbb3efb0a80f21c70b99b830c3aadc0a (HEAD -> main, origin/main)
+Author: victorkane <victorkane@gmail.com>
+Date:   Sat Oct 7 14:38:22 2023 -0300
+
+    add additional routing to parameterized individual note page
+
+ app/notes/[id]/page.tsx | 27 +++++++++++++++++++++++++++
+ 1 file changed, 27 insertions(+)
+```
 
 ---
 
